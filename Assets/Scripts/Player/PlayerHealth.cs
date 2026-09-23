@@ -6,7 +6,7 @@ public class PlayerHealth : MonoBehaviour
     public int CurrentHealth => currentHealth;
     private int currentHealth;
 
-    
+    public GameOverManager gameOverManager;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -41,5 +41,6 @@ public class PlayerHealth : MonoBehaviour
     void Die()
     {
         Debug.Log("Player Dead");
+        gameOverManager.ShowGameOver();
     }
 }

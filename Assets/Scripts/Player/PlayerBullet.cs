@@ -43,10 +43,8 @@ public class PlayerBullet : MonoBehaviour
             if (enemy != null)
             {
                 enemy.Explode();
-                ScoreManager.Instance.AddScore(1);
+                ScoreManager.Instance.AddScore(10);
             }
-
-            ScoreManager.Instance.AddScore(1);
         }
     }
 }

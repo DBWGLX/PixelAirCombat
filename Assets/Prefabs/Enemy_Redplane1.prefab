@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7680858671100557079}
   - component: {fileID: 3307671229462469558}
   - component: {fileID: 901741418274957890}
+  - component: {fileID: 3684947541481889607}
   m_Layer: 0
   m_Name: Enemy_Redplane1
   m_TagString: Enemy
@@ -154,3 +155,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
   speed: 2
   collisionEffect: {fileID: 1275299427458950492, guid: a8bfbf21be551464ab6424214976aad0, type: 3}
+--- !u!114 &3684947541481889607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6879113812930290363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d78bff6895e21489310db554d28ff6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectController

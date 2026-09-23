@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 177584859050098386}
   - component: {fileID: -5330525520176321362}
   - component: {fileID: 2149615742663862541}
+  - component: {fileID: 3167506321663913376}
   m_Layer: 0
   m_Name: PlayerBullet
   m_TagString: Untagged
@@ -181,3 +182,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &3167506321663913376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3820598737566030451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d78bff6895e21489310db554d28ff6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectController
