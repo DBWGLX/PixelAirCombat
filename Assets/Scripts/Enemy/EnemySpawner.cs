@@ -4,7 +4,7 @@ public class EnemySpawner : MonoBehaviour
 {
     public GameObject[] enemyPrefabs;
     public float minSpawnInterval = 0.5f;
-    public float maxSpawnInterval = 3f;
+    public float maxSpawnInterval = 2f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -12,11 +12,6 @@ public class EnemySpawner : MonoBehaviour
         SpawnEnemy();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     void SpawnEnemy()
     {

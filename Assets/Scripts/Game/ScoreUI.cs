@@ -4,16 +4,8 @@ public class ScoreUI : MonoBehaviour
 {
     public TextMeshProUGUI scoreText;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void UpdateScore(int score)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update() //临时方案
-    {
-        scoreText.text =
-            "Score: " + ScoreManager.Instance.Score;
+        scoreText.text = "Score: " + score;
     }
 }

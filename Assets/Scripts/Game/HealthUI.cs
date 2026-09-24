@@ -22,6 +22,9 @@ public class HealthUI : MonoBehaviour
     {
         for (int i = 0; i < hearts.Length; i++)
         {
+            //尺寸
+            hearts[i].rectTransform.sizeDelta = heartOriginalSize * 1f;
+
             if (i < currentHealth)
             {
                 hearts[i].sprite = heartRed;

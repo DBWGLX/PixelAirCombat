@@ -9,10 +9,13 @@ public class EnemyCollision : MonoBehaviour
         if (!other.CompareTag("Player"))
             return;
 
+
+
         PlayerHealth health = other.GetComponent<PlayerHealth>();
 
         if (health != null)
         {
+
             health.TakeDamage(1);
         }
 
@@ -21,6 +24,8 @@ public class EnemyCollision : MonoBehaviour
 
     public void Explode()
     {
+
+
         // 播放爆炸特效
         if (collisionEffect != null)
         {
@@ -32,5 +37,7 @@ public class EnemyCollision : MonoBehaviour
         }
 
         Destroy(gameObject);
+
+
     }
 }

@@ -28,6 +28,19 @@ public class RedPlane1Attack : MonoBehaviour
             float delay = Random.Range(minDelay, maxDelay);
             Invoke(nameof(Fire), delay);
         }
+
+        //
+        if (Random.value < 0.2f)
+        {
+            float delay = Random.Range(minDelay, maxDelay);
+            Invoke(nameof(Fire), delay);
+        }
+
+        if (Random.value < 0.01f)
+        {
+            float delay = Random.Range(minDelay, maxDelay);
+            Invoke(nameof(Fire), delay);
+        }
     }
 
     private void Fire()
@@ -53,9 +66,4 @@ public class RedPlane1Attack : MonoBehaviour
         bullet.GetComponent<EnemyBullet>().SetDirection(direction);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
