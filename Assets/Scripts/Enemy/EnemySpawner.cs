@@ -2,13 +2,14 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    public GameObject enemyPrefab;
-    public float spawnInterval = 2f;
+    public GameObject[] enemyPrefabs;
+    public float minSpawnInterval = 0.5f;
+    public float maxSpawnInterval = 3f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        InvokeRepeating(nameof(SpawnEnemy), 1f, spawnInterval);
+        SpawnEnemy();
     }
 
     // Update is called once per frame
@@ -39,11 +40,22 @@ public class EnemySpawner : MonoBehaviour
             0f
         );
 
+        // 随机选择一种敌机
+        GameObject enemyPrefab =
+            enemyPrefabs[Random.Range(0, enemyPrefabs.Length)];
+
         Instantiate(
             enemyPrefab,
             spawnPosition,
             Quaternion.identity
         );
+
+        //再次生成
+        // 随机等待 0.5 ~ 3 秒后再次生成
+        float nextSpawnTime =
+            Random.Range(minSpawnInterval, maxSpawnInterval);
+
+        Invoke(nameof(SpawnEnemy), nextSpawnTime);
     }
 
 }

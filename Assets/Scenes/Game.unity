@@ -892,7 +892,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdaaae6db0c81fe4f979330425f0527c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemySpawner
-  enemyPrefab: {fileID: 6879113812930290363, guid: 5e72e25d939c5be4cbc7178d02dc86d7, type: 3}
+  enemyPrefabs:
+  - {fileID: 6879113812930290363, guid: 5e72e25d939c5be4cbc7178d02dc86d7, type: 3}
+  - {fileID: 6879113812930290363, guid: fc7263cd071e6d24790173c6845918ef, type: 3}
+  - {fileID: 6879113812930290363, guid: eca511be2e31ec34eafe7d31f3fbca01, type: 3}
+  - {fileID: 6879113812930290363, guid: e2f5111cfbe1ac044b598b8e0400f5c6, type: 3}
+  - {fileID: 6879113812930290363, guid: ecfd4a3bd879c924ba4fcbe58c46e26b, type: 3}
+  - {fileID: 6879113812930290363, guid: dd7a1fc4ca78e084aa573a01048fb392, type: 3}
   spawnInterval: 2
 --- !u!4 &936129168
 Transform:

@@ -39,7 +39,7 @@ public class PlayerBullet : MonoBehaviour
             Destroy(gameObject);
             
             //获得 敌机 脚本组件
-            EnemyController enemy = other.GetComponent<EnemyController>();
+            EnemyCollision enemy = other.GetComponent<EnemyCollision>();
             if (enemy != null)
             {
                 enemy.Explode();
